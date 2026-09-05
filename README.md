@@ -81,8 +81,23 @@ flowchart TD
 
     %% Master Devices
     subgraph Master ["Master Subsystem (RV32I)"]
-        direction LR
-        CPU["Core Logic<br>(Fetch, Decode, ALU, Regs, LSU)"]
+        direction TB
+        
+        subgraph CPU ["Core Logic"]
+            direction LR
+            Fetch["Instruction<br>Fetch"]
+            Decode["Decode &<br>Control"]
+            Regs[("Register File<br>32x32b")]
+            ALU["ALU /<br>Execution"]
+            LSU["Load-Store<br>Unit"]
+
+            Fetch -->|instr| Decode
+            Decode -->|alu_op| ALU
+            Decode -->|ctrl| Regs
+            ALU <-->|rs1,rs2 / rd| Regs
+            ALU -->|addr/data| LSU
+        end
+        
         RVFI["RVFI Debug Interface"]
         CPU -.->|Internal State| RVFI
     end
@@ -107,7 +122,8 @@ flowchart TD
     end
 
     %% Data flow routing
-    CPU -->|Mem Addr / Data| PMP
+    LSU -->|Mem Addr / Data| PMP
+    Fetch -->|Instruction Fetch| PMP
     PMP -->|Authorized Req| AXI
     RVFI -.->|Instruction Commit| SecMon
     
