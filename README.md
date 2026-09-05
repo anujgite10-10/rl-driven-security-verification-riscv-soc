@@ -37,7 +37,7 @@
 
 This project presents an end-to-end framework for designing, verifying, and physically implementing a security-hardened RISC-V System-on-Chip (SoC). The key contribution is a **closed-loop AI verification engine** that combines Reinforcement Learning (RL) with Large Language Model (LLM)-guided gap analysis to autonomously achieve comprehensive functional and security coverage - significantly reducing the manual effort traditionally required in hardware verification.
 
-The SoC is taken from RTL through synthesis, placement, clock tree synthesis, routing, and final signoff using the **OpenROAD** open-source ASIC flow, targeting the **SkyWater 130nm** process node with **zero DRC, antenna, and LVS violations**.
+The SoC is taken from RTL through verification, synthesis, floorplanning, placement, clock tree synthesis, routing and final signoff using the **OpenROAD** open-source ASIC flow, targeting the **SkyWater 130nm** process node with **zero DRC, antenna, and LVS violations**.
 
 ### Key Innovations
 1. **Fully Autonomous Hybrid Verification:** Unlike traditional Constrained Random Verification (CRV), this project uses a closed-loop system where an **RL Agent** hunts for edge-case bugs by fuzzing the processor, and an **LLM** diagnoses root causes and generates exact Verilog/Python patches for any remaining coverage gaps.
