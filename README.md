@@ -74,59 +74,51 @@ The DUT is a custom RISC-V SoC implementing the **RV32I** base integer ISA with 
 ### 1.4 SoC Block Diagram
 
 ```mermaid
-flowchart LR
-    classDef default fill:#fff,stroke:#000,stroke-width:2px,color:#000
-    classDef group fill:#f9f9f9,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5,color:#000
+flowchart TD
+    classDef default fill:#fff,stroke:#000,stroke-width:1.5px,color:#000
+    classDef bus fill:#333,stroke:#000,stroke-width:1px,color:#fff,font-weight:bold
+    classDef subsystem fill:#fcfcfc,stroke:#666,stroke-width:1.5px,stroke-dasharray: 5 5
 
-    subgraph Core ["RV32I CPU Core"]
-        direction TB
-        Fetch["Instruction Fetch"]
-        Decode["Decoder (R/I/S/B/U/J)"]
-        Ctrl["Control Unit + CSR Bank"]
-        ALU["ALU (ADD/SUB/SLL...)"]
-        Regs["Register File (32×32b)"]
-        LSU["Load-Store Unit"]
-        RVFI["RVFI Interface"]
-
-        Fetch -->|instr| Decode
-        Decode -->|alu_op| ALU
-        Decode -->|ctrl| Ctrl
-        ALU <-->|rs1, rs2, rd| Regs
-        Ctrl -->|trap/mret| Regs
-        ALU -->|mem_req| LSU
-        Ctrl -->|mem_req| LSU
-        LSU -.-> RVFI
-        Ctrl -.-> RVFI
+    %% Master Devices
+    subgraph Master ["Master Subsystem (RV32I)"]
+        direction LR
+        CPU["Core Logic<br>(Fetch, Decode, ALU, Regs, LSU)"]
+        RVFI["RVFI Debug Interface"]
+        CPU -.->|Internal State| RVFI
     end
 
-    subgraph Sec ["Security Extensions"]
-        direction TB
-        IPMP["I-PMP (Instruction)"]
-        DPMP["D-PMP (Data)"]
-        Monitor["Security Monitor<br>6 Alerts (PMP, Esc, CSR, Insn, Sec, DoS)"]
-
-        IPMP -->|pmp_deny| Monitor
-        DPMP -->|pmp_deny| Monitor
+    %% Security & Access Control
+    subgraph Security ["Security & Access Control"]
+        direction LR
+        PMP["PMP Unit<br>(Instruction & Data)"]
+        SecMon["Security Monitor<br>(6 Hardware Alerts)"]
+        PMP -->|Access Denied| SecMon
     end
 
-    subgraph BusPeriph ["Bus & Peripherals"]
-        direction TB
-        AXI["AXI4-Lite Interconnect"]
-        SRAM[/"SRAM (8KB)"/]
-        UART[/"UART (TX/RX)"/]
+    %% Central Bus
+    AXI["AXI4-Lite System Interconnect Bus"]:::bus
+
+    %% Slave Devices
+    subgraph Slaves ["Memory & Peripherals (Slave Domain)"]
+        direction LR
+        SRAM[/"SRAM Controller (8KB)"/]
+        UART[/"UART Serial Port"/]
         GPIO[/"GPIO (32-bit I/O)"/]
-
-        AXI <--> SRAM
-        AXI <--> UART
-        AXI <--> GPIO
     end
 
-    Fetch -->|imem_addr| IPMP
-    LSU -->|dmem_addr| DPMP
-    LSU <-->|AXI AR/AW/W/R/B| AXI
-    RVFI -->|rvfi_valid, insn, pc| Monitor
+    %% Data flow routing
+    CPU -->|Mem Addr / Data| PMP
+    PMP -->|Authorized Req| AXI
+    RVFI -.->|Instruction Commit| SecMon
+    
+    AXI <-->|0x0000_0000| SRAM
+    AXI <-->|0x1000_0000| UART
+    AXI <-->|0x2000_0000| GPIO
 
-    class Core,Sec,BusPeriph group
+    %% Alerts out
+    SecMon -->|sec_alert| Alerts((System<br>Alerts))
+
+    class Master,Security,Slaves subsystem
 ```
 <p align="center"><em>Fig. 1: SecVeriRL SoC architecture — RV32I core with PMP, security monitor, and AXI4-Lite peripherals.</em></p>
 
