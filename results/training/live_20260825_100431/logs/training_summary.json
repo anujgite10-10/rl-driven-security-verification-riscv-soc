@@ -1,0 +1,20 @@
+{
+  "total_timesteps": 5024,
+  "total_episodes": 5024,
+  "reward": {
+    "mean": 0.1561721937786521,
+    "max": 0.8363636404275895,
+    "min": -0.05,
+    "final_10_mean": 0.24121212415397167
+  },
+  "functional_coverage": {
+    "mean": 0.15489287782281413,
+    "max": 0.45454545454545453,
+    "final": 0.2727272727272727
+  },
+  "security_coverage": {
+    "mean": 0.050192409766454345,
+    "max": 0.5,
+    "final": 0.0
+  }
+}

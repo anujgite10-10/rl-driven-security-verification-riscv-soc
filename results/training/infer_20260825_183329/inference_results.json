@@ -1,0 +1,4582 @@
+[
+  {
+    "episode": 0,
+    "reward": 15.861948563903562,
+    "functional_coverage": 0.817206552948581,
+    "security_coverage": 0.2266558110285971,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7422598600387573,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5415441989898682,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.43214815855026245,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9812539219856262,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9668419361114502,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9464119672775269,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5380972623825073,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.967698335647583,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7878730893135071,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.750632643699646,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9520981311798096,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7951043844223022,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6579596996307373,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.3494129776954651,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4237620234489441,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9512866735458374,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7427632808685303,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7531139850616455,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6352487206459045,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  },
+  {
+    "episode": 1,
+    "reward": 14.36412749923765,
+    "functional_coverage": 0.647119250345705,
+    "security_coverage": 0.396800205072435,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7499596476554871,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6585479974746704,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.43032556772232056,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5371389389038086,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.41751474142074585,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9492303133010864,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9649081230163574,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9720754623413086,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9795951843261719,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7938344478607178,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6347136497497559,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7698782682418823,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.747448742389679,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.645875096321106,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.42210862040519714,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7463549375534058,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.42731696367263794,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6587179899215698,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9691951870918274,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  },
+  {
+    "episode": 2,
+    "reward": 15.414968736097212,
+    "functional_coverage": 0.5686560829792813,
+    "security_coverage": 0.584517704906053,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.877220630645752,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9842129945755005,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.43267399072647095,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.8748621940612793,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9559094309806824,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6350983381271362,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7474969625473022,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9552673101425171,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5459765791893005,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.41989797353744507,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7636907696723938,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.764961838722229,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6845128536224365,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7871662974357605,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.644121527671814,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9647760987281799,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4261859059333801,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6293723583221436,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6522845029830933,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9767060279846191,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  },
+  {
+    "episode": 3,
+    "reward": 15.642872362211337,
+    "functional_coverage": 0.5971142271698766,
+    "security_coverage": 0.5676526897430441,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4166497588157654,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4372684955596924,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.662929892539978,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6720725297927856,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7603728771209717,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6324072480201721,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9827491044998169,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.417413592338562,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.954501211643219,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.43729713559150696,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7461496591567993,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6341766715049744,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.42324012517929077,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6342530250549316,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5443584322929382,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6527403593063354,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.751897931098938,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7476968765258789,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7554547786712646,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7406471967697144,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.538192093372345,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  },
+  {
+    "episode": 4,
+    "reward": 16.22499567233026,
+    "functional_coverage": 0.6092928421564917,
+    "security_coverage": 0.5064012694503647,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6575649380683899,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4219425916671753,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.971915602684021,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6494685411453247,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9610764980316162,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7429553866386414,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6436476707458496,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7997548580169678,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.35090500116348267,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6602705717086792,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.3530391454696655,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6536703109741211,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6361955404281616,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6345018148422241,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9572272300720215,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.43926888704299927,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6389904022216797,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7823410034179688,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  },
+  {
+    "episode": 5,
+    "reward": 16.33178462199866,
+    "functional_coverage": 0.6008547445939285,
+    "security_coverage": 0.15542112380049988,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.35223883390426636,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.35464370250701904,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.741853654384613,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6885743737220764,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4469829797744751,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7489983439445496,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4165189266204834,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4205969572067261,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.641115665435791,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6325993537902832,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6284098625183105,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6345928311347961,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7975922226905823,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7715697884559631,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5388631820678711,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7879818677902222,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7376716136932373,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6573245525360107,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7653244733810425,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6292895674705505,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4290976822376251,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.41625458002090454,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5467127561569214,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  },
+  {
+    "episode": 6,
+    "reward": 17.771995130926364,
+    "functional_coverage": 0.5181022320217985,
+    "security_coverage": 0.5468159184035745,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7435362339019775,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6876869797706604,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.3485379219055176,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7634891271591187,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6454283595085144,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6365435123443604,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.3535376787185669,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7395897507667542,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6751194000244141,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9578837156295776,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.42852485179901123,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6492946147918701,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7819043397903442,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4253111481666565,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5388613343238831,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7360368967056274,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.44442829489707947,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.8706759214401245,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9732452630996704,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7782195806503296,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  },
+  {
+    "episode": 7,
+    "reward": 16.42006822936236,
+    "functional_coverage": 0.6073625795869462,
+    "security_coverage": 0.2126481560547745,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.44463789463043213,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9805943369865417,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4372221827507019,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.44278833270072937,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7696280479431152,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6405466794967651,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.806864857673645,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6432734131813049,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.44011351466178894,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7380832433700562,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5382559895515442,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4246044158935547,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9829682111740112,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6543433666229248,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4422827661037445,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9718983769416809,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4427719712257385,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6456702947616577,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9607070684432983,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6389271020889282,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6423852443695068,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  },
+  {
+    "episode": 8,
+    "reward": 15.606736316531885,
+    "functional_coverage": 0.8327924978049148,
+    "security_coverage": 0.20807038332170658,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6358617544174194,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9809929132461548,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7530344724655151,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6440218687057495,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6340619325637817,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6422189474105835,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.757654070854187,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5407371520996094,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6250919103622437,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7460838556289673,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9617729187011719,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.649269700050354,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7562781572341919,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6519258618354797,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7601718902587891,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9714788198471069,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.8734769821166992,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6520785689353943,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9550439119338989,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  },
+  {
+    "episode": 9,
+    "reward": 15.479305798560375,
+    "functional_coverage": 0.6645002899836807,
+    "security_coverage": 0.3268276179468341,
+    "knobs_used": [
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "all_open",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.20454680919647217,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6394670009613037,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.969786524772644,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.42351287603378296,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7351622581481934,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.4468115568161011,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6399499773979187,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7584339380264282,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.432370126247406,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.5367580652236938,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.421036958694458,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7543374300003052,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7667280435562134,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "random_alu",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.43137994408607483,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6548291444778442,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.8695718050003052,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7777671813964844,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.7417124509811401,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6334644556045532,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6419377326965332,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.9808996915817261,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6531813144683838,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "privilege_switch",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "pmp_violation",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 1.0,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      },
+      {
+        "test_scenario": "memory_stress",
+        "pmp_config_mode": "m_only_secure",
+        "privilege_bias": 0.0,
+        "memory_pattern": "sequential",
+        "interrupt_rate": 0.6559779644012451,
+        "illegal_insn_rate": 0.0,
+        "test_length": 50
+      }
+    ]
+  }
+]

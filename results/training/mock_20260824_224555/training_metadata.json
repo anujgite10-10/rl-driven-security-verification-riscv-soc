@@ -1,0 +1,7 @@
+{
+  "algorithm": "A2C",
+  "timesteps": 5000,
+  "training_time_sec": 19.23146367073059,
+  "model_path": "C:\\Users\\Anuj\\Asic_Research\\SecVeriRL\\results\\training\\mock_20260824_224555\\final_model",
+  "timestamp": "2026-08-24T22:46:18.559794"
+}

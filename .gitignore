@@ -1,0 +1,30 @@
+# SecVeriRL .gitignore
+
+# Environment & secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+venv/
+
+# Simulation build
+sim_build/
+*.vcd
+*.fst
+coverage.dat
+
+# Results (keep only key files)
+results/sim_results_*.xml
+results/rl_logs/
+results/sim_errors.log
+
+# Physical design - large binary files
+physical_design/secverirl_soc_top.gds
+physical_design/GDS3D*.exe
+physical_design/*.stl
+
+# OS
+.DS_Store
+Thumbs.db

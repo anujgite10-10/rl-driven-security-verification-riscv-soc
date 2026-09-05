@@ -1,0 +1,9 @@
+{
+  "test_scenario": "mixed",
+  "pmp_config_mode": "all_open",
+  "privilege_bias": 1.0,
+  "memory_pattern": "sequential",
+  "interrupt_rate": 0.2276708483695984,
+  "illegal_insn_rate": 0.0,
+  "test_length": 369
+}

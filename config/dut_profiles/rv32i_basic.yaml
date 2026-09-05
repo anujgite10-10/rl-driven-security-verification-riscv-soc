@@ -1,0 +1,214 @@
+# ============================================================================
+# SecVeriRL — DUT Profile: RV32I Basic (Reference Design)
+# ============================================================================
+# This profile configures SecVeriRL for the built-in reference RV32I subsystem.
+# Copy and modify this file to target any RISC-V design.
+
+dut:
+  name: "SecVeriRL Reference SoC"
+  description: "RV32I core + PMP + AXI-Lite peripherals"
+  top_module: "secverirl_soc_top"
+  clock_name: "clk"
+  reset_name: "rst_n"
+  reset_active_low: true
+
+  # ISA configuration
+  isa:
+    base: "RV32I"               # RV32I | RV32E | RV64I
+    extensions: ["M", "Zicsr"]  # M, A, C, F, Zicsr, Zifencei
+    privilege_modes: ["M", "U"] # M, S, U
+    xlen: 32
+
+  # RTL file list (relative to project root)
+  rtl_files:
+    - "rtl/pkg/secverirl_pkg.sv"
+    - "rtl/core/rv32i_core.sv"
+    - "rtl/core/rv32i_alu.sv"
+    - "rtl/core/rv32i_decoder.sv"
+    - "rtl/core/rv32i_regfile.sv"
+    - "rtl/core/rv32i_control.sv"
+    - "rtl/core/rv32i_lsu.sv"
+    - "rtl/security/pmp_unit.sv"
+    - "rtl/security/privilege_controller.sv"
+    - "rtl/security/security_monitor.sv"
+    - "rtl/bus/axi_lite_interconnect.sv"
+    - "rtl/peripherals/axi_lite_uart.sv"
+    - "rtl/peripherals/axi_lite_gpio.sv"
+    - "rtl/peripherals/axi_lite_sram.sv"
+    - "rtl/top/secverirl_soc_top.sv"
+
+  # Include directories
+  include_dirs:
+    - "rtl/pkg"
+    - "rtl/core"
+
+# Security features available in this DUT
+security:
+  has_pmp: true
+  pmp_regions: 4
+  pmp_granularity: "NAPOT"      # NA4 | NAPOT | TOR
+  has_privilege_modes: true
+  has_memory_isolation: true
+  has_security_monitor: true
+  has_crypto: false
+
+  # Security scenarios to verify
+  scenarios:
+    - name: "pmp_read_violation"
+      description: "U-mode reads M-mode protected region"
+      priority: "critical"
+      formal_property: "prop_pmp_read_enforce"
+
+    - name: "pmp_write_violation"
+      description: "U-mode writes to read-only PMP region"
+      priority: "critical"
+      formal_property: "prop_pmp_write_enforce"
+
+    - name: "pmp_exec_violation"
+      description: "Execute from non-executable PMP region"
+      priority: "critical"
+      formal_property: "prop_pmp_exec_enforce"
+
+    - name: "privilege_escalation"
+      description: "Illegal privilege mode transition"
+      priority: "critical"
+      formal_property: "prop_priv_no_escalation"
+
+    - name: "csr_unauthorized_access"
+      description: "Lower privilege accesses higher-privilege CSR"
+      priority: "high"
+      formal_property: "prop_csr_access_control"
+
+    - name: "illegal_instruction_trap"
+      description: "Illegal instruction causes correct trap"
+      priority: "high"
+      formal_property: "prop_illegal_insn_trap"
+
+    - name: "interrupt_priority"
+      description: "Interrupt priority ordering maintained"
+      priority: "medium"
+      formal_property: "prop_interrupt_priority"
+
+    - name: "bus_protocol_violation"
+      description: "AXI-Lite protocol rules enforced"
+      priority: "medium"
+      formal_property: "prop_axi_protocol"
+
+# Memory map
+memory_map:
+  - name: "SRAM"
+    base_addr: 0x00000000
+    size: 0x00010000      # 64KB
+    permissions: "RWX"
+    region: "normal"
+
+  - name: "PERIPHERAL_UART"
+    base_addr: 0x40000000
+    size: 0x00001000      # 4KB
+    permissions: "RW"
+    region: "peripheral"
+
+  - name: "PERIPHERAL_GPIO"
+    base_addr: 0x40001000
+    size: 0x00001000
+    permissions: "RW"
+    region: "peripheral"
+
+  - name: "SECURE_ROM"
+    base_addr: 0x80000000
+    size: 0x00004000      # 16KB
+    permissions: "RX"
+    region: "secure"
+
+# Coverage configuration
+coverage:
+  functional_groups:
+    - name: "instruction_coverage"
+      description: "RV32I instruction types exercised"
+      coverpoints:
+        - "R-type instructions"
+        - "I-type instructions"
+        - "S-type instructions"
+        - "B-type instructions"
+        - "U-type instructions"
+        - "J-type instructions"
+        - "System instructions"
+
+    - name: "pipeline_coverage"
+      description: "Pipeline state transitions"
+      coverpoints:
+        - "Fetch → Decode → Execute → Writeback"
+        - "Pipeline stall"
+        - "Pipeline flush"
+        - "Back-to-back hazards"
+
+    - name: "bus_coverage"
+      description: "AXI-Lite transaction types"
+      coverpoints:
+        - "Read single"
+        - "Write single"
+        - "Back-to-back read"
+        - "Back-to-back write"
+        - "Read-after-write"
+        - "Error response"
+
+  security_groups:
+    - name: "pmp_coverage"
+      description: "PMP enforcement scenarios"
+      coverpoints:
+        - "PMP region 0..3 read access (each privilege)"
+        - "PMP region 0..3 write access (each privilege)"
+        - "PMP region 0..3 exec access (each privilege)"
+        - "PMP violation → trap"
+        - "PMP cfg register writes"
+        - "PMP overlapping region access"
+
+    - name: "privilege_coverage"
+      description: "Privilege mode transitions"
+      coverpoints:
+        - "M-mode → U-mode (mret)"
+        - "U-mode → M-mode (trap)"
+        - "Exception in M-mode"
+        - "Exception in U-mode"
+        - "Interrupt in M-mode"
+        - "Interrupt in U-mode"
+        - "Nested exception"
+
+    - name: "csr_coverage"
+      description: "CSR access patterns"
+      coverpoints:
+        - "M-mode CSR read (from M-mode)"
+        - "M-mode CSR write (from M-mode)"
+        - "M-mode CSR access (from U-mode) → trap"
+        - "Illegal CSR address → trap"
+
+# RL agent test knobs (actions the RL agent can control)
+test_knobs:
+  - name: "test_scenario_weight"
+    type: "categorical"
+    options: ["random_alu", "memory_stress", "pmp_violation", "privilege_switch",
+              "interrupt_storm", "csr_access", "bus_protocol", "mixed"]
+
+  - name: "pmp_config_mode"
+    type: "categorical"
+    options: ["all_open", "m_only_secure", "mixed_permissions", "locked_regions"]
+
+  - name: "privilege_bias"
+    type: "continuous"
+    range: [0.0, 1.0]       # 0=mostly M-mode, 1=mostly U-mode
+
+  - name: "memory_access_pattern"
+    type: "categorical"
+    options: ["sequential", "random", "boundary", "crossing"]
+
+  - name: "interrupt_frequency"
+    type: "continuous"
+    range: [0.0, 1.0]       # 0=no interrupts, 1=max frequency
+
+  - name: "illegal_insn_injection_rate"
+    type: "continuous"
+    range: [0.0, 0.3]       # Fraction of illegal instructions
+
+  - name: "test_length"
+    type: "discrete"
+    range: [50, 500]         # Number of instructions per test

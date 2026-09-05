@@ -1,0 +1,72 @@
+# ============================================================================
+# SecVeriRL — Master Project Configuration
+# ============================================================================
+# This file defines global settings. DUT-specific settings go in dut_profiles/.
+
+project:
+  name: "SecVeriRL"
+  version: "1.0.0"
+  description: "Security-Coverage-Guided Adaptive Verification for RISC-V"
+
+# Active DUT profile (override with --config CLI flag)
+active_profile: "config/dut_profiles/rv32i_basic.yaml"
+
+# Directory paths (relative to project root)
+paths:
+  rtl_dir: "rtl"
+  verification_dir: "verification"
+  results_dir: "results"
+  synthesis_dir: "synthesis"
+  logs_dir: "results/logs"
+  coverage_dir: "results/coverage"
+  formal_dir: "results/formal"
+  waveform_dir: "results/waveforms"
+
+# Simulation settings
+simulation:
+  simulator: "verilator"          # verilator | icarus | questa
+  top_module: "secverirl_soc_top"
+  compile_args:
+    - "--trace"
+    - "--coverage"
+    - "-Wall"
+  sim_timeout_ms: 60000
+  seed: "random"                  # "random" or integer
+  max_parallel_sims: 4
+
+# Formal verification settings
+formal:
+  engine: "symbiyosys"
+  solver: "boolector"
+  depth: 30                       # BMC depth
+  timeout_sec: 3600
+  mode: "bmc"                     # bmc | prove | cover
+
+# RL agent settings
+rl_agent:
+  algorithm: "A2C"                # A2C | PPO | DQN
+  learning_rate: 0.0007
+  gamma: 0.99
+  n_steps: 5
+  total_timesteps: 50000
+  reward_weights:
+    functional_coverage: 0.3
+    security_coverage: 0.4
+    assertion_coverage: 0.2
+    bug_detection: 0.1
+  observation_dim: 64             # auto-calculated from coverage
+  action_dim: 16                  # number of test knobs
+
+# Coverage targets
+coverage:
+  functional_target: 0.95
+  security_target: 0.90
+  assertion_target: 0.85
+  overall_target: 0.90
+
+# Synthesis settings
+synthesis:
+  target_frequency_mhz: 50
+  pdk: "sky130A"
+  die_area: "0 0 1000 1000"
+  core_area: "50 50 950 950"

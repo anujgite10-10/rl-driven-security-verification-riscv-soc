@@ -1,0 +1,48 @@
+{
+  "functional_coverage": 0.8181818181818182,
+  "security_coverage": 0.5,
+  "pmp_coverage": 0.7142857142857143,
+  "privilege_modes_hit": 2,
+  "privilege_transitions": 2,
+  "instruction_types_hit": 9,
+  "instruction_types_total": 11,
+  "security_alerts_hit": 3,
+  "security_alerts_total": 6,
+  "details": {
+    "insn_types": {
+      "55": true,
+      "23": true,
+      "111": true,
+      "103": true,
+      "99": false,
+      "3": true,
+      "35": true,
+      "19": true,
+      "51": false,
+      "15": true,
+      "115": true
+    },
+    "priv_modes": {
+      "0": true,
+      "1": false,
+      "3": true
+    },
+    "security_alerts": {
+      "1": false,
+      "2": true,
+      "3": false,
+      "4": true,
+      "5": true,
+      "6": false
+    },
+    "pmp_scenarios": {
+      "u_read_m_region": true,
+      "u_write_m_region": true,
+      "u_exec_m_region": false,
+      "m_read_all": true,
+      "m_write_all": false,
+      "pmp_cfg_written": true,
+      "pmp_locked": true
+    }
+  }
+}

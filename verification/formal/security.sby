@@ -1,0 +1,49 @@
+[tasks]
+bmc_security
+cover_security
+
+[options]
+bmc_security: mode bmc
+bmc_security: depth 30
+
+cover_security: mode cover
+cover_security: depth 50
+
+[engines]
+bmc_security: smtbmc boolector
+cover_security: smtbmc boolector
+
+[script]
+read -formal -sv rtl/pkg/secverirl_pkg.sv
+read -formal -sv rtl/core/rv32i_alu.sv
+read -formal -sv rtl/core/rv32i_regfile.sv
+read -formal -sv rtl/core/rv32i_decoder.sv
+read -formal -sv rtl/core/rv32i_lsu.sv
+read -formal -sv rtl/core/rv32i_control.sv
+read -formal -sv rtl/core/rv32i_core.sv
+read -formal -sv rtl/security/pmp_unit.sv
+read -formal -sv rtl/security/security_monitor.sv
+read -formal -sv rtl/peripherals/axi_lite_sram.sv
+read -formal -sv rtl/peripherals/axi_lite_uart.sv
+read -formal -sv rtl/peripherals/axi_lite_gpio.sv
+read -formal -sv rtl/bus/axi_lite_interconnect.sv
+read -formal -sv rtl/top/secverirl_soc_top.sv
+read -formal -sv verification/formal/properties/security_properties.sv
+prep -top secverirl_soc_top
+
+[files]
+rtl/pkg/secverirl_pkg.sv
+rtl/core/rv32i_alu.sv
+rtl/core/rv32i_regfile.sv
+rtl/core/rv32i_decoder.sv
+rtl/core/rv32i_lsu.sv
+rtl/core/rv32i_control.sv
+rtl/core/rv32i_core.sv
+rtl/security/pmp_unit.sv
+rtl/security/security_monitor.sv
+rtl/peripherals/axi_lite_sram.sv
+rtl/peripherals/axi_lite_uart.sv
+rtl/peripherals/axi_lite_gpio.sv
+rtl/bus/axi_lite_interconnect.sv
+rtl/top/secverirl_soc_top.sv
+verification/formal/properties/security_properties.sv

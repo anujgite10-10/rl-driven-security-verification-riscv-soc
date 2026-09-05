@@ -1,0 +1,99 @@
+# Sky130 Process Definition for GDS3D
+# Heights in nm based on Sky130 metal stack
+
+# Substrate - REQUIRED, always layer 255
+LayerStart: Substrate
+Layer: 255
+Height: -500
+Thickness: 800
+Red: 0.15
+Green: 0.15
+Blue: 0.20
+Filter: 0.5
+Metal: 0
+Show: 1
+LayerEnd
+
+# Local Interconnect (li1) - GDS layer 67
+LayerStart: li1
+Layer: 67
+Height: 0
+Thickness: 100
+Red: 0.50
+Green: 0.50
+Blue: 0.85
+Filter: 0.0
+Metal: 1
+Shortkey: 0
+Show: 1
+LayerEnd
+
+# Metal 1 - GDS layer 68
+LayerStart: Metal 1
+Layer: 68
+Height: 300
+Thickness: 360
+Red: 0.10
+Green: 0.10
+Blue: 1.00
+Filter: 0.0
+Metal: 1
+Shortkey: 1
+Show: 1
+LayerEnd
+
+# Metal 2 - GDS layer 69
+LayerStart: Metal 2
+Layer: 69
+Height: 960
+Thickness: 360
+Red: 0.10
+Green: 0.90
+Blue: 0.10
+Filter: 0.0
+Metal: 1
+Shortkey: 2
+Show: 1
+LayerEnd
+
+# Metal 3 - GDS layer 70
+LayerStart: Metal 3
+Layer: 70
+Height: 1620
+Thickness: 845
+Red: 0.90
+Green: 0.90
+Blue: 0.10
+Filter: 0.0
+Metal: 1
+Shortkey: 3
+Show: 1
+LayerEnd
+
+# Metal 4 - GDS layer 71
+LayerStart: Metal 4
+Layer: 71
+Height: 2650
+Thickness: 845
+Red: 0.90
+Green: 0.10
+Blue: 0.10
+Filter: 0.0
+Metal: 1
+Shortkey: 4
+Show: 1
+LayerEnd
+
+# Metal 5 - GDS layer 72
+LayerStart: Metal 5
+Layer: 72
+Height: 3880
+Thickness: 1260
+Red: 0.10
+Green: 0.90
+Blue: 0.90
+Filter: 0.0
+Metal: 1
+Shortkey: 5
+Show: 1
+LayerEnd

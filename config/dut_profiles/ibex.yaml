@@ -1,0 +1,94 @@
+# ============================================================================
+# SecVeriRL — DUT Profile: Ibex (lowRISC)
+# ============================================================================
+# Configuration for using the Ibex RISC-V core as the DUT.
+# Ibex must be cloned separately: git clone https://github.com/lowRISC/ibex.git
+# ============================================================================
+
+dut:
+  name: "Ibex RISC-V Core (lowRISC)"
+  description: "RV32IMC production core with PMP"
+  top_module: "ibex_top"
+  clock_name: "clk_i"
+  reset_name: "rst_ni"
+  reset_active_low: true
+  external_repo: "https://github.com/lowRISC/ibex.git"
+
+  isa:
+    base: "RV32I"
+    extensions: ["M", "C", "Zicsr", "Zifencei"]
+    privilege_modes: ["M", "U"]
+    xlen: 32
+
+  # RTL files (relative to Ibex clone)
+  rtl_files:
+    - "ibex/rtl/ibex_pkg.sv"
+    - "ibex/rtl/ibex_alu.sv"
+    - "ibex/rtl/ibex_compressed_decoder.sv"
+    - "ibex/rtl/ibex_controller.sv"
+    - "ibex/rtl/ibex_counter.sv"
+    - "ibex/rtl/ibex_cs_registers.sv"
+    - "ibex/rtl/ibex_decoder.sv"
+    - "ibex/rtl/ibex_ex_block.sv"
+    - "ibex/rtl/ibex_id_stage.sv"
+    - "ibex/rtl/ibex_if_stage.sv"
+    - "ibex/rtl/ibex_load_store_unit.sv"
+    - "ibex/rtl/ibex_multdiv_fast.sv"
+    - "ibex/rtl/ibex_pmp.sv"
+    - "ibex/rtl/ibex_register_file_ff.sv"
+    - "ibex/rtl/ibex_wb_stage.sv"
+    - "ibex/rtl/ibex_core.sv"
+    - "ibex/rtl/ibex_top.sv"
+
+security:
+  has_pmp: true
+  pmp_regions: 16            # Ibex supports up to 16
+  pmp_granularity: "NAPOT"
+  has_privilege_modes: true
+  has_memory_isolation: true
+  has_security_monitor: false # Add our custom monitor
+
+  scenarios:
+    - name: "pmp_read_violation"
+      description: "U-mode reads M-mode protected region"
+      priority: "critical"
+
+    - name: "pmp_write_violation"
+      description: "U-mode writes to read-only PMP region"
+      priority: "critical"
+
+    - name: "privilege_escalation"
+      description: "Illegal privilege mode transition"
+      priority: "critical"
+
+    - name: "compressed_insn_illegal"
+      description: "Illegal compressed instruction handling"
+      priority: "high"
+
+coverage:
+  functional_groups:
+    - name: "instruction_coverage"
+      description: "RV32IMC instruction types"
+      coverpoints:
+        - "R-type, I-type, S-type, B-type, U-type, J-type"
+        - "M-extension (MUL, DIV, REM)"
+        - "C-extension (compressed)"
+        - "System instructions (CSR, ECALL, MRET)"
+
+    - name: "pipeline_coverage"
+      description: "Ibex 2-stage pipeline"
+      coverpoints:
+        - "Stall conditions"
+        - "Flush conditions"
+        - "Back-to-back instructions"
+        - "Data hazards"
+
+test_knobs:
+  - name: "test_scenario_weight"
+    type: "categorical"
+    options: ["random_alu", "memory_stress", "pmp_violation", "privilege_switch",
+              "compressed_insn", "mul_div_stress", "mixed"]
+
+  - name: "compressed_insn_rate"
+    type: "continuous"
+    range: [0.0, 1.0]

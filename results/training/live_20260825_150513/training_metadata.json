@@ -1,0 +1,7 @@
+{
+  "algorithm": "PPO",
+  "timesteps": 5000,
+  "training_time_sec": 12409.545040369034,
+  "model_path": "/mnt/c/Users/Anuj/Asic_Research/SecVeriRL/results/training/live_20260825_150513/final_model",
+  "timestamp": "2026-08-25T18:32:06.858489"
+}
