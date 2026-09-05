@@ -8,14 +8,17 @@
   <em>From RTL to GDSII — An End-to-End AI-Augmented Hardware Security Verification Framework</em>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/ISA-RISC--V%20RV32I-blue?style=flat-square" alt="ISA"/>
-  <img src="https://img.shields.io/badge/PDK-SkyWater%20130nm-green?style=flat-square" alt="PDK"/>
-  <img src="https://img.shields.io/badge/DRC%20Violations-0-brightgreen?style=flat-square" alt="DRC"/>
-  <img src="https://img.shields.io/badge/LVS-Clean-brightgreen?style=flat-square" alt="LVS"/>
-  <img src="https://img.shields.io/badge/Coverage-100%25%20Functional%20|%20100%25%20Security-orange?style=flat-square" alt="Coverage"/>
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License"/>
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Core Architecture</b><br>RISC-V RV32I</td>
+      <td align="center"><b>Target Node</b><br>SkyWater 130nm</td>
+      <td align="center"><b>Signoff Status</b><br>Zero DRC / LVS Clean</td>
+      <td align="center"><b>Verification Coverage</b><br>100% Functional & Security</td>
+      <td align="center"><b>License</b><br>MIT Open Source</td>
+    </tr>
+  </table>
+</div>
 
 ---
 
