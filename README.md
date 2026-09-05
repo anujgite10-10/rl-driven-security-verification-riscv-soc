@@ -495,6 +495,6 @@ If you use this work in your research, please cite:
 ---
 
 <p align="center">
-  <strong>Built with ❤️ using open-source EDA tools</strong><br/>
+  <strong>Built with using open-source EDA tools</strong><br/>
   OpenROAD · SkyWater 130nm PDK · Verilator · cocotb · Stable-Baselines3 · Google Gemini
 </p>
