@@ -5,7 +5,7 @@
 <h1 align="center">Reinforcement Learning-Driven Security Verification and Silicon Implementation of a RISC-V SoC</h1>
 
 <p align="center">
-  <em>From RTL to GDSII — An End-to-End AI-Augmented Hardware Security Verification Framework</em>
+  <em>From RTL to GDSII - An End-to-End AI-Augmented Hardware Security Verification Framework</em>
 </p>
 
 <div align="center">
