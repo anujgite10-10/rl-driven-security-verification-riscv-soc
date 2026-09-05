@@ -466,7 +466,7 @@ If you use this work in your research, please cite:
 @misc{secverirl2026,
   title={Reinforcement Learning-Driven Security Verification and Silicon
          Implementation of a RISC-V SoC},
-  author={Anuj},
+  author={Anuj Gite, Vedanth Dhagay, Bhavik Somvanshi, Moksh Maru, Ishaan Gawde},
   year={2026},
   note={Open-source, RTL-to-GDSII with AI-augmented verification},
   url={https://github.com/yourusername/secverirl}
