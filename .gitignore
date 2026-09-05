@@ -28,3 +28,6 @@ physical_design/*.stl
 # OS
 .DS_Store
 Thumbs.db
+
+# Large media files
+physical_design/video.mp4

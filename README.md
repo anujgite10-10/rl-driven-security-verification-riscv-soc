@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/PDK-SkyWater%20130nm-green?style=flat-square" alt="PDK"/>
   <img src="https://img.shields.io/badge/DRC%20Violations-0-brightgreen?style=flat-square" alt="DRC"/>
   <img src="https://img.shields.io/badge/LVS-Clean-brightgreen?style=flat-square" alt="LVS"/>
-  <img src="https://img.shields.io/badge/Coverage-100%25%20Functional-orange?style=flat-square" alt="Coverage"/>
+  <img src="https://img.shields.io/badge/Coverage-100%25%20Functional%20|%20100%25%20Security-orange?style=flat-square" alt="Coverage"/>
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License"/>
 </p>
 
@@ -73,9 +73,61 @@ The DUT is a custom RISC-V SoC implementing the **RV32I** base integer ISA with 
 
 ### 1.4 SoC Block Diagram
 
-<p align="center">
-  <img src="docs/soc_block_diagram.jpg" width="800" alt="SoC Block Diagram"/>
-</p>
+```mermaid
+flowchart LR
+    classDef default fill:#fff,stroke:#000,stroke-width:2px,color:#000
+    classDef group fill:#f9f9f9,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5,color:#000
+
+    subgraph Core ["RV32I CPU Core"]
+        direction TB
+        Fetch["Instruction Fetch"]
+        Decode["Decoder (R/I/S/B/U/J)"]
+        Ctrl["Control Unit + CSR Bank"]
+        ALU["ALU (ADD/SUB/SLL...)"]
+        Regs["Register File (32×32b)"]
+        LSU["Load-Store Unit"]
+        RVFI["RVFI Interface"]
+
+        Fetch -->|instr| Decode
+        Decode -->|alu_op| ALU
+        Decode -->|ctrl| Ctrl
+        ALU <-->|rs1, rs2, rd| Regs
+        Ctrl -->|trap/mret| Regs
+        ALU -->|mem_req| LSU
+        Ctrl -->|mem_req| LSU
+        LSU -.-> RVFI
+        Ctrl -.-> RVFI
+    end
+
+    subgraph Sec ["Security Extensions"]
+        direction TB
+        IPMP["I-PMP (Instruction)"]
+        DPMP["D-PMP (Data)"]
+        Monitor["Security Monitor<br>6 Alerts (PMP, Esc, CSR, Insn, Sec, DoS)"]
+
+        IPMP -->|pmp_deny| Monitor
+        DPMP -->|pmp_deny| Monitor
+    end
+
+    subgraph BusPeriph ["Bus & Peripherals"]
+        direction TB
+        AXI["AXI4-Lite Interconnect"]
+        SRAM[/"SRAM (8KB)"/]
+        UART[/"UART (TX/RX)"/]
+        GPIO[/"GPIO (32-bit I/O)"/]
+
+        AXI <--> SRAM
+        AXI <--> UART
+        AXI <--> GPIO
+    end
+
+    Fetch -->|imem_addr| IPMP
+    LSU -->|dmem_addr| DPMP
+    LSU <-->|AXI AR/AW/W/R/B| AXI
+    RVFI -->|rvfi_valid, insn, pc| Monitor
+
+    class Core,Sec,BusPeriph group
+```
 <p align="center"><em>Fig. 1: SecVeriRL SoC architecture — RV32I core with PMP, security monitor, and AXI4-Lite peripherals.</em></p>
 
 ---
@@ -86,9 +138,27 @@ The core innovation of this project is a **two-stage AI verification loop** that
 
 ### 2.1 Architecture Overview
 
-<p align="center">
-  <img src="docs/verification_loop_diagram.jpg" width="800" alt="AI Verification Loop"/>
-</p>
+```mermaid
+flowchart TD
+    classDef default fill:#fff,stroke:#000,stroke-width:2px,color:#000
+    classDef group fill:#f9f9f9,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5,color:#000
+
+    RL["RL Agent (A2C/PPO)<br><hr>Policy: MLP (64-64)<br>Obs: 30-dim coverage vector<br>Action: 7 continuous knobs<br>Reward: multi-objective weighted sum"]
+    Gen["Test Program Generator<br><hr>Scenarios: random_alu, mem_stress, pmp_violation...<br>Output: bare-metal RV32I machine code<br>Preamble: trap handler + seed instructions"]
+    Sim["RTL Simulation Engine<br><hr>Simulator: Verilator (compiled)<br>Testbench: cocotb (Python)<br>DUT: SecVeriRL SoC<br>Interrupt injection: async ext_irq"]
+    Cov["Coverage Collector<br><hr>Functional: 11 opcode bins<br>Security: 6 alert bins<br>PMP: 7 scenario bins<br>Privilege: 3 mode bins"]
+    LLM["LLM Gap Analyzer (Gemini)<br><hr>Input: unhit coverage bins + RTL source code<br>Analysis: root cause diagnosis<br>Output: exact RTL/test fixes (SystemVerilog/Python)"]
+
+    RL -->|Action vector a_t| Gen
+    Gen -->|test_program.bin| Sim
+    Sim -->|RVFI signals| Cov
+    Cov -->|Observation o_t+1 + Reward r_t| RL
+    Cov -->|Coverage gaps| LLM
+    LLM -.->|Actionable code fixes| Gen
+
+    %% Loop annotation
+    RL -.->|1800+ Iterations| RL
+```
 <p align="center"><em>Fig. 2: Closed-loop AI verification architecture — RL agent generates test knobs, simulation produces coverage, LLM analyzes remaining gaps.</em></p>
 
 ### 2.2 Stage 1: RL-Based Adaptive Test Generation
@@ -152,8 +222,8 @@ The RL agent was trained for **1800+ simulation iterations**. Coverage improved 
 | Metric | Random Testing | RL-Driven (Final) | Improvement |
 |--------|---------------|-------------------|-------------|
 | **Functional Coverage** | 45% | **100%** (11/11 opcodes) | +122% |
-| **Security Coverage** | 17% | **83%** (5/6 alerts) | +388% |
-| **PMP Coverage** | 14% | **86%** (6/7 scenarios) | +514% |
+| **Security Coverage** | 17% | **100%** (6/6 alerts) | +488% |
+| **PMP Coverage** | 14% | **100%** (7/7 scenarios) | +614% |
 | **Privilege Modes** | 1/3 | **2/3** (M + U) | +100% |
 | **Privilege Transitions** | 0 | **2** (M↔U) | — |
 
@@ -174,24 +244,24 @@ The RL agent was trained for **1800+ simulation iterations**. Coverage improved 
 | `0x0F` | FENCE | ✅ |
 | `0x73` | SYSTEM (CSR/ECALL) | ✅ |
 
-#### Security Alerts (5/6 = 83%)
+#### Security Alerts (6/6 = 100%)
 | Code | Alert Type | Status |
 |------|-----------|--------|
-| `0x01` | PMP Violation | ⬜ (Requires specific PMP deny + U-mode) |
+| `0x01` | PMP Violation | ✅ |
 | `0x02` | Privilege Escalation | ✅ |
-| `0x03` | Illegal CSR Access | ⬜ (Needs U-mode CSR write to M-mode register) |
+| `0x03` | Illegal CSR Access | ✅ |
 | `0x04` | Illegal Instruction | ✅ |
 | `0x05` | Secure Region Access | ✅ |
-| `0x06` | Rapid Traps (DoS) | ⬜ (Needs 8+ traps in 16-cycle window) |
+| `0x06` | Rapid Traps (DoS) | ✅ |
 
-#### PMP Scenarios (6/7 = 86%)
+#### PMP Scenarios (7/7 = 100%)
 | Scenario | Status |
 |----------|--------|
 | U-mode READ from M-region | ✅ |
 | U-mode WRITE to M-region | ✅ |
-| U-mode EXEC from M-region | ⬜ |
+| U-mode EXEC from M-region | ✅ |
 | M-mode READ all regions | ✅ |
-| M-mode WRITE all regions | ⬜ |
+| M-mode WRITE all regions | ✅ |
 | PMP config register written | ✅ |
 | PMP region locked | ✅ |
 
