@@ -25,7 +25,7 @@ This project presents an end-to-end framework for designing, verifying, and phys
 
 The SoC is taken from RTL through synthesis, placement, clock tree synthesis, routing, and final signoff using the **OpenROAD** open-source ASIC flow, targeting the **SkyWater 130nm** process node with **zero DRC, antenna, and LVS violations**.
 
-### Key Innovations (USP)
+### Key Innovations
 1. **Fully Autonomous Hybrid Verification:** Unlike traditional Constrained Random Verification (CRV), this project uses a closed-loop system where an **RL Agent** hunts for edge-case bugs by fuzzing the processor, and an **LLM** diagnoses root causes and generates exact Verilog/Python patches for any remaining coverage gaps.
 2. **Focus on Hardware Security (PMP):** While most AI verification targets functional correctness, SecVeriRL acts as an automated hardware hacker. It actively attempts privilege escalations, illegal CSR accesses, and memory violations, autonomously proving 100% security coverage of the RISC-V Physical Memory Protection (PMP) unit.
 3. **Silicon-Proven (RTL-to-GDSII):** This is not just a software simulation. The AI-verified SoC design was taken completely through a physical design flow (OpenROAD/sky130), proving that the security-hardened RTL is synthesizable, DRC/LVS-clean, and tapeout-ready.
