@@ -10,13 +10,24 @@
 
 <div align="center">
   <table>
-    <tr>
-      <td align="center"><b>Core Architecture</b><br>RISC-V RV32I</td>
-      <td align="center"><b>Target Node</b><br>SkyWater 130nm</td>
-      <td align="center"><b>Signoff Status</b><br>Zero DRC / LVS Clean</td>
-      <td align="center"><b>Verification Coverage</b><br>100% Functional & Security</td>
-      <td align="center"><b>License</b><br>MIT Open Source</td>
-    </tr>
+    <thead>
+      <tr>
+        <th>Core Architecture</th>
+        <th>Target Node</th>
+        <th>Signoff Status</th>
+        <th>Verification Coverage</th>
+        <th>License</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">RISC-V RV32I</td>
+        <td align="center">SkyWater 130nm</td>
+        <td align="center">Zero DRC / LVS Clean</td>
+        <td align="center">100% Functional & Security</td>
+        <td align="center">MIT</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
