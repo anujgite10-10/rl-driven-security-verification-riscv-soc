@@ -363,13 +363,6 @@ The GDSII was rendered in 3D using **GDS3D** to visualize the metal stack:
   <img src="physical_design/3d_sram_topdown.png" width="400" alt="SRAM Top-Down"/>
 </p>
 <p align="center"><em>Left: 3D view of the SRAM macro with routing visible. Right: SRAM macro top-down view.</em></p>
-
-### 4.5 3D Flythrough Video
-
-https://github.com/user-attachments/assets/video.mp4
-
-> **Note**: If the video doesn't render above, see `physical_design/video.mp4` in this repository.
-
 ---
 
 ## 5. Repository Structure
