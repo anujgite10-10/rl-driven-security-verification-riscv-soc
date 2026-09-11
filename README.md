@@ -363,7 +363,6 @@ The GDSII was rendered in 3D using **GDS3D** to visualize the metal stack:
   <img src="physical_design/3d_sram_topdown.png" width="400" alt="SRAM Top-Down"/>
 </p>
 <p align="center"><em>Left: 3D view of the SRAM macro with routing visible. Right: SRAM macro top-down view.</em></p>
----
 
 ## 5. Repository Structure
 
