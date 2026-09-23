@@ -5,7 +5,7 @@
 <h1 align="center">Reinforcement Learning-Driven Security Verification and Silicon Implementation of a RISC-V SoC</h1>
 
 <p align="center">
-  <em>From RTL to GDSII — An End-to-End AI-Augmented Hardware Security Verification Framework</em>
+  <em>From RTL to GDSII - An End-to-End AI-Augmented Hardware Security Verification Framework</em>
 </p>
 
 <div align="center">
@@ -35,11 +35,11 @@
 
 ## Abstract
 
-This project presents an end-to-end framework for designing, verifying, and physically implementing a security-hardened RISC-V System-on-Chip (SoC). The key contribution is a **closed-loop AI verification engine** that combines Reinforcement Learning (RL) with Large Language Model (LLM)-guided gap analysis to autonomously achieve comprehensive functional and security coverage — significantly reducing the manual effort traditionally required in hardware verification.
+This project presents an end-to-end framework for designing, verifying, and physically implementing a security-hardened RISC-V System-on-Chip (SoC). The key contribution is a **closed-loop AI verification engine** that combines Reinforcement Learning (RL) with Large Language Model (LLM)-guided gap analysis to autonomously achieve comprehensive functional and security coverage - significantly reducing the manual effort traditionally required in hardware verification.
 
-The SoC is taken from RTL through synthesis, placement, clock tree synthesis, routing, and final signoff using the **OpenROAD** open-source ASIC flow, targeting the **SkyWater 130nm** process node with **zero DRC, antenna, and LVS violations**.
+The SoC is taken from RTL through Verification, Synthesis, Floorplanning, Placement, Clock Tree Synthesis, Routing and Final Signoff using the **OpenROAD** open-source ASIC flow, targeting the **SkyWater 130nm** process node with achieving **Full Timing Closure** along with **Zero DRC**, **Antenna**, and **LVS Violations**.
 
-### Key Innovations (USP)
+### Key Innovations
 1. **Fully Autonomous Hybrid Verification:** Unlike traditional Constrained Random Verification (CRV), this project uses a closed-loop system where an **RL Agent** hunts for edge-case bugs by fuzzing the processor, and an **LLM** diagnoses root causes and generates exact Verilog/Python patches for any remaining coverage gaps.
 2. **Focus on Hardware Security (PMP):** While most AI verification targets functional correctness, SecVeriRL acts as an automated hardware hacker. It actively attempts privilege escalations, illegal CSR accesses, and memory violations, autonomously proving 100% security coverage of the RISC-V Physical Memory Protection (PMP) unit.
 3. **Silicon-Proven (RTL-to-GDSII):** This is not just a software simulation. The AI-verified SoC design was taken completely through a physical design flow (OpenROAD/sky130), proving that the security-hardened RTL is synthesizable, DRC/LVS-clean, and tapeout-ready.
@@ -364,14 +364,6 @@ The GDSII was rendered in 3D using **GDS3D** to visualize the metal stack:
 </p>
 <p align="center"><em>Left: 3D view of the SRAM macro with routing visible. Right: SRAM macro top-down view.</em></p>
 
-### 4.5 3D Flythrough Video
-
-https://github.com/user-attachments/assets/video.mp4
-
-> **Note**: If the video doesn't render above, see `physical_design/video.mp4` in this repository.
-
----
-
 ## 5. Repository Structure
 
 ```
@@ -488,13 +480,13 @@ If you use this work in your research, please cite:
   author={Anuj Gite, Vedanth Dhagay, Bhavik Somvanshi, Moksh Maru, Ishaan Gawde},
   year={2026},
   note={Open-source, RTL-to-GDSII with AI-augmented verification},
-  url={https://github.com/yourusername/secverirl}
+  url={https://github.com/anujgite10-10/rl-driven-security-verification-riscv-soc}
 }
 ```
 
 ---
 
 <p align="center">
-  <strong>Built with ❤️ using open-source EDA tools</strong><br/>
+  <strong>Built with using open-source EDA tools</strong><br/>
   OpenROAD · SkyWater 130nm PDK · Verilator · cocotb · Stable-Baselines3 · Google Gemini
 </p>
