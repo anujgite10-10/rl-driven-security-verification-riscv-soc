@@ -155,7 +155,7 @@ flowchart TD
 
     class Master,Security,Slaves subsystem
 ```
-<p align="center"><em>Fig. 1: SecVeriRL SoC architecture — RV32I core with PMP, security monitor, and AXI4-Lite peripherals.</em></p>
+<p align="center"><em>Fig. 1: SecVeriRL SoC architecture - RV32I core with PMP, security monitor, and AXI4-Lite peripherals.</em></p>
 
 ---
 
@@ -186,7 +186,7 @@ flowchart TD
     %% Loop annotation
     RL -.->|1800+ Iterations| RL
 ```
-<p align="center"><em>Fig. 2: Closed-loop AI verification architecture — RL agent generates test knobs, simulation produces coverage, LLM analyzes remaining gaps.</em></p>
+<p align="center"><em>Fig. 2: Closed-loop AI verification architecture - RL agent generates test knobs, simulation produces coverage, LLM analyzes remaining gaps.</em></p>
 
 ### 2.2 Stage 1: RL-Based Adaptive Test Generation
 
