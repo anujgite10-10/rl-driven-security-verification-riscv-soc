@@ -551,7 +551,7 @@ If you use this work in your research, please cite:
   title   = {Reinforcement Learning-Driven Security Verification and Silicon
              Implementation of a {RISC-V} {SoC}},
   author  = {Anuj Gite, Vedanth Dhagay, Bhavik Somvanshi, Moksh
-             Maru, Ishaan Gawde, Prashant V Kasambe.},
+             Maru, Ishaan Gawde and Prashant V Kasambe.},
   year    = {2026}
 }
 ```
